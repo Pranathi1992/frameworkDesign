@@ -9,7 +9,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
-import com.qa.opencart.exceptions.browserException;
+
+
+
+
 public class DriverFactory {
 	public WebDriver driver;
 	Properties prop;
@@ -32,7 +35,7 @@ public class DriverFactory {
 			driver=new EdgeDriver();
 		default:
 			System.out.println("please pass right browser name"+Browsername);
-			throw new browserException("invaid browser"+Browsername);
+			
 		}
 		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();
@@ -45,14 +48,42 @@ public class DriverFactory {
 	 */
 	public Properties initprop() {
 		prop=new Properties();
-		try {
-		FileInputStream ip=new FileInputStream("./src/test/resources/config/config.properties");
+		String envName=System.getProperty("env");
+		System.out.println("running test on env"+ envName);
+		FileInputStream ip=null;
+		
+		try 
+		{
+			if(envName==null) {
+			System.out.println("env is null run in qa env");
+			ip=new FileInputStream("./src/test/resources/config/config.properties");
+			}else {
+				switch (envName.toLowerCase().trim())
+				{
+				case "qa":
+					ip=new FileInputStream("./src/test/resources/config/qa.config.properties");
+					break;
+				case "dev":
+					ip=new FileInputStream("./src/test/resources/config/dev.config.properties");
+					break;
+				case "stage":
+					ip=new FileInputStream("./src/test/resources/config/config.properties");
+					break;
+
+				default:
+					System.out.println("please pass right environment"+ envName);
+					break;
+				}
+			}
 		prop.load(ip);
-		}catch(FileNotFoundException e) {
+		}
+		catch(FileNotFoundException e) {
 			e.printStackTrace();
-		}catch(IOException e) {
+		}
+		catch(IOException e) {
 			e.printStackTrace();
 		}
 		return prop;
 	}
+
 }

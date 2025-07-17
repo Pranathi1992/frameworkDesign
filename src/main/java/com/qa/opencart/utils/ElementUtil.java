@@ -20,14 +20,14 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import com.qa.opencart.exceptions.FrameworkExceptions;
+import com.qa.opencart.exceptions.frameworkExceptions;
 
-public class ElementUtil {
+public class elementUtil {
 
 	private WebDriver driver;
 	private Actions act;
 
-	public ElementUtil(WebDriver driver) {
+	public elementUtil(WebDriver driver) {
 		this.driver = driver;
 		act = new Actions(driver);
 	}
@@ -154,7 +154,7 @@ public class ElementUtil {
 
 		if (totalSuggestions == 0) {
 			System.out.println("No suggesstions found...");
-			throw new FrameworkExceptions("No Suggestions FOUND");
+			throw new frameworkExceptions("No Suggestions FOUND");
 		}
 
 		for (WebElement e : suggList) {

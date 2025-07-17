@@ -1,1 +1,1 @@
-package com.qa.opencart.Pages;
+package com.qa.opencart.pages;
