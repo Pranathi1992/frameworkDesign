@@ -2,6 +2,9 @@ package com.qa.opencart.pages;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -16,6 +19,7 @@ public class AccountsPage {
 	private By headers = By.cssSelector("div#content h2");
 	private By search = By.name("search");
 	private By searchIcon = By.cssSelector("div#search button");
+	private static final Logger log=LogManager.getLogger(AccountsPage.class);
 	
 	public AccountsPage(WebDriver driver) {
 		this.driver = driver;
@@ -24,7 +28,8 @@ public class AccountsPage {
 	
 	public String getAccountsPageTitle() {
 		String title = eleUtil.waitForTitleContainsAndReturn(appConstants.ACCOUNTS_PAGE_TITLE, appConstants.DEFAULT_SHORT_TIME_OUT);
-		System.out.println("Accounts page title: " + title);
+		//System.out.println("Accounts page title: " + title);
+		log.info("Accounts page title: " + title);
 		return title;
 	}
 	
@@ -48,7 +53,9 @@ public class AccountsPage {
 	}
 	
 	public ResultsPage doSearch(String searchKey) {
-		System.out.println("Search Key ==>" + searchKey);
+		
+		//System.out.println("Search Key ==>" + searchKey);
+		log.info("Search Key ==>" + searchKey);
 		WebElement searchEle = eleUtil.waitForElementVisible(search, appConstants.DEFAULT_SHORT_TIME_OUT);
 		eleUtil.doSendKeys(searchEle, searchKey);
 		eleUtil.doClick(searchIcon);

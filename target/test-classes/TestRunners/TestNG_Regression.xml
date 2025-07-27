@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="TestNG Regression Suite"  verbose="4" thread-count="3" parallel="tests">
+	<listeners>
+		<!--<listener
+			class-name="com.aventstack.chaintest.plugins.ChainTestListener" />-->
+		<listener
+			class-name="com.qa.opencart.listeners.TestAllureListener" />
+		<!-- <listener class-name="com.qa.opencart.listeners.AnnotationTransformer" 
+			/> -->
+	</listeners>
+	
 	<test name="LoginpageTest">
 		<parameter name="browser" value="chrome"/>
 		<classes>
 			<class name="com.qa.opencart.Tests.LoginpageTest" />
 		</classes>
 	</test>	
-	<!--<test name="Accounts page test">
+	 <!--<test name="Accounts page test">
 		<parameter name="browser" value="edge"/>
 		<classes>
 			<class name="com.qa.opencart.Tests.AccountsPageTest" />
