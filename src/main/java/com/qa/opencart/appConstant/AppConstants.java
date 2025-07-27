@@ -2,7 +2,7 @@ package com.qa.opencart.appConstant;
 
 import java.util.List;
 
-public class appConstants {
+public class AppConstants {
 	
 	public static final int DEFAULT_SHORT_TIME_OUT=5;
 	public static final int DEFAULT_MEDIUM_TIME_OUT=10;

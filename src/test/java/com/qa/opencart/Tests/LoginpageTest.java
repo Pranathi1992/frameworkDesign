@@ -2,7 +2,7 @@ package com.qa.opencart.Tests;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import com.qa.opencart.appConstant.appConstants;
+import com.qa.opencart.appConstant.AppConstants;
 import Basetest.BaseTestClass;
 import io.qameta.allure.Description;
 import io.qameta.allure.Epic;
@@ -21,7 +21,7 @@ public class LoginpageTest extends BaseTestClass {
 	@Test(priority=1)
 	public void loginPageTitleTest() {
 		String actTitle = loginpage.getLoginPageTitle();
-		Assert.assertEquals(actTitle, appConstants.LOGIN_PAGE_TITLE);
+		Assert.assertEquals(actTitle, AppConstants.LOGIN_PAGE_TITLE);
 	}
 	@Description("checking open cart login page url...")
 	@Severity(SeverityLevel.NORMAL)
@@ -29,7 +29,7 @@ public class LoginpageTest extends BaseTestClass {
 	@Test(priority=2)
 	public void loginPageURLTest() {
 		String actURL = loginpage.getLoginPageURL();
-		Assert.assertTrue(actURL.contains(appConstants.Login_PAGE_FRACTION_URL));
+		Assert.assertTrue(actURL.contains(AppConstants.Login_PAGE_FRACTION_URL));
 	}
 	@Description("checking open cart login page has forgot pwd link...")
 	@Severity(SeverityLevel.CRITICAL)
@@ -44,6 +44,6 @@ public class LoginpageTest extends BaseTestClass {
 	@Test(priority=4)
 	public void doLoginTest() {
 		accntpage=loginpage.doLogin(prop.getProperty("username").trim(), prop.getProperty("password").trim());
-		Assert.assertEquals(accntpage.getAccountsPageTitle(), appConstants.ACCOUNTS_PAGE_TITLE);		
+		Assert.assertEquals(accntpage.getAccountsPageTitle(), AppConstants.ACCOUNTS_PAGE_TITLE);		
 	}
 }

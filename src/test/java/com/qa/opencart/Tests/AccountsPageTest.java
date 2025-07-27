@@ -8,7 +8,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import com.qa.opencart.appConstant.appConstants;
+import com.qa.opencart.appConstant.AppConstants;
 import com.qa.opencart.pages.ResultsPage;
 
 import Basetest.BaseTestClass;
@@ -34,7 +34,7 @@ public class AccountsPageTest extends BaseTestClass{
 	@Test(priority=1)
 	public void accPageTitleTest() {
 		String actTitle = accntpage.getAccountsPageTitle();
-		Assert.assertEquals(actTitle, appConstants.ACCOUNTS_PAGE_TITLE);
+		Assert.assertEquals(actTitle, AppConstants.ACCOUNTS_PAGE_TITLE);
 	}
 	@Description("checking logout link existance ...")
 	@Severity(SeverityLevel.MINOR)
@@ -49,7 +49,7 @@ public class AccountsPageTest extends BaseTestClass{
 	@Test(priority=3)
 	public void accPageHeadersTest() {
 		List<String> actualHeadersList = accntpage.getAccPageHeaders();
-		Assert.assertEquals(actualHeadersList, appConstants.ACTUAL_ACCOUNTS_PAGE_HEADER_LIST);
+		Assert.assertEquals(actualHeadersList, AppConstants.ACTUAL_ACCOUNTS_PAGE_HEADER_LIST);
 	}
 	@DataProvider
 	public Object[][] getsearchKey(){

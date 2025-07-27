@@ -8,12 +8,12 @@ import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import com.qa.opencart.appConstant.appConstants;
-import com.qa.opencart.utils.elementUtil;
+import com.qa.opencart.appConstant.AppConstants;
+import com.qa.opencart.utils.ElementUtil;
 
 public class AccountsPage {
 	private WebDriver driver;
-	private elementUtil eleUtil;
+	private ElementUtil eleUtil;
 	
 	private By logoutLink = By.linkText("Logout");
 	private By headers = By.cssSelector("div#content h2");
@@ -23,11 +23,11 @@ public class AccountsPage {
 	
 	public AccountsPage(WebDriver driver) {
 		this.driver = driver;
-		eleUtil = new elementUtil(driver);
+		eleUtil = new ElementUtil(driver);
 	}
 	
 	public String getAccountsPageTitle() {
-		String title = eleUtil.waitForTitleContainsAndReturn(appConstants.ACCOUNTS_PAGE_TITLE, appConstants.DEFAULT_SHORT_TIME_OUT);
+		String title = eleUtil.waitForTitleContainsAndReturn(AppConstants.ACCOUNTS_PAGE_TITLE, AppConstants.DEFAULT_SHORT_TIME_OUT);
 		//System.out.println("Accounts page title: " + title);
 		log.info("Accounts page title: " + title);
 		return title;
@@ -38,12 +38,12 @@ public class AccountsPage {
 	}
 	
 	public int getTotalAccountsPageHeader() {
-		return eleUtil.waitForElementsVisible(headers, appConstants.DEFAULT_MEDIUM_TIME_OUT).size();
+		return eleUtil.waitForElementsVisible(headers, AppConstants.DEFAULT_MEDIUM_TIME_OUT).size();
 	}
 	
 	
 	public List<String> getAccPageHeaders() {
-		List<WebElement> headersList = eleUtil.waitForElementsVisible(headers, appConstants.DEFAULT_MEDIUM_TIME_OUT);
+		List<WebElement> headersList = eleUtil.waitForElementsVisible(headers, AppConstants.DEFAULT_MEDIUM_TIME_OUT);
 		List<String> headersValueList = new ArrayList<String>();
 		for(WebElement e : headersList) {
 			String header = e.getText();
@@ -56,7 +56,7 @@ public class AccountsPage {
 		
 		//System.out.println("Search Key ==>" + searchKey);
 		log.info("Search Key ==>" + searchKey);
-		WebElement searchEle = eleUtil.waitForElementVisible(search, appConstants.DEFAULT_SHORT_TIME_OUT);
+		WebElement searchEle = eleUtil.waitForElementVisible(search, AppConstants.DEFAULT_SHORT_TIME_OUT);
 		eleUtil.doSendKeys(searchEle, searchKey);
 		eleUtil.doClick(searchIcon);
 		return new ResultsPage(driver);

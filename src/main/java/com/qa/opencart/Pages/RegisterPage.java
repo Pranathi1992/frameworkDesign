@@ -3,12 +3,12 @@ package com.qa.opencart.pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-import com.qa.opencart.appConstant.appConstants;
-import com.qa.opencart.utils.elementUtil;
+import com.qa.opencart.appConstant.AppConstants;
+import com.qa.opencart.utils.ElementUtil;
 
 public class RegisterPage {
 	private WebDriver driver;
-	private elementUtil eleUtil;
+	private ElementUtil eleUtil;
 
 	private By firstName = By.id("input-firstname");
 	private By lastName = By.id("input-lastname");
@@ -30,12 +30,12 @@ public class RegisterPage {
 
 	public RegisterPage(WebDriver driver) {
 		this.driver = driver;
-		eleUtil = new elementUtil(driver);
+		eleUtil = new ElementUtil(driver);
 	}
 
 	public boolean userRegisteration(String firstName, String lastName, String email, String telephone, String password, String subscribe) {
 
-		eleUtil.waitForElementVisible(this.firstName, appConstants.DEFAULT_MEDIUM_TIME_OUT).sendKeys(firstName);
+		eleUtil.waitForElementVisible(this.firstName, AppConstants.DEFAULT_MEDIUM_TIME_OUT).sendKeys(firstName);
 
 		eleUtil.doSendKeys(this.lastName, lastName);
 		eleUtil.doSendKeys(this.email, email);
@@ -52,11 +52,11 @@ public class RegisterPage {
 		eleUtil.doClick(agreeCheckBox);
 		eleUtil.doClick(continueButton);
 
-		String successMesg = eleUtil.waitForElementVisible(successMessg, appConstants.DEFAULT_MEDIUM_TIME_OUT).getText();
+		String successMesg = eleUtil.waitForElementVisible(successMessg, AppConstants.DEFAULT_MEDIUM_TIME_OUT).getText();
 		System.out.println(successMesg);
 		
 
-		if (successMesg.contains(appConstants.USER_REGISTER_SUCCESS_MESSG)) {
+		if (successMesg.contains(AppConstants.USER_REGISTER_SUCCESS_MESSG)) {
 			eleUtil.doClick(logoutLink);
 			eleUtil.doClick(registerLink);
 			return true;
