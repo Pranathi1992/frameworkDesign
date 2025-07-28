@@ -92,20 +92,17 @@ public class DriverFactory {
 					break;
 				}
 			}
-			if (ip != null) {
-	            prop.load(ip);
-	        } else {
-	            throw new IllegalStateException("Properties file input stream is null.");
-	        }
-
-	    } catch (FileNotFoundException e) {
-	        log.error("Properties file not found for environment: " + envName, e);
-	    } catch (IOException e) {
-	        log.error("IO Exception while loading properties file", e);
-	    }
-
-	    return prop;
+			prop.load(ip);
+		}
+		catch(FileNotFoundException e) {
+			e.printStackTrace();
+		}
+		catch(IOException e) {
+			e.printStackTrace();
+		}
+		return prop;
 	}
+
 
 	public static File getScreenshotFile() {
 		File srcFile = ((TakesScreenshot) getDriver()).getScreenshotAs(OutputType.FILE);// temp dir
