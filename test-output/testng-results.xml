@@ -2,123 +2,123 @@
 <testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-25T22:54:30 IST" name="TestNG Regression Suite" finished-at="2025-07-25T22:54:42 IST" duration-ms="12294">
+  <suite started-at="2025-07-28T13:53:45 IST" name="TestNG Regression Suite" finished-at="2025-07-28T13:54:01 IST" duration-ms="16194">
     <groups>
     </groups>
-    <test started-at="2025-07-25T22:54:30 IST" name="LoginpageTest" finished-at="2025-07-25T22:54:42 IST" duration-ms="12294">
+    <test started-at="2025-07-28T13:53:45 IST" name="LoginpageTest" finished-at="2025-07-28T13:54:01 IST" duration-ms="16194">
       <class name="com.qa.opencart.Tests.LoginpageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.opencart.Tests.LoginpageTest@778db7c5]" started-at="2025-07-25T22:54:30 IST" name="setup" finished-at="2025-07-25T22:54:39 IST" duration-ms="8885" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.opencart.Tests.LoginpageTest@7a8136b3]" started-at="2025-07-28T13:53:45 IST" name="setup" finished-at="2025-07-28T13:53:59 IST" duration-ms="14119" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:com.qa.opencart.Tests.LoginpageTest@778db7c5]" started-at="2025-07-25T22:54:39 IST" name="beforeMethod" finished-at="2025-07-25T22:54:39 IST" duration-ms="6" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:com.qa.opencart.Tests.LoginpageTest@7a8136b3]" started-at="2025-07-28T13:53:59 IST" name="beforeMethod" finished-at="2025-07-28T13:53:59 IST" duration-ms="6" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@2b2ed6af]]>
+                <![CDATA[org.testng.TestRunner@90ad962]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="loginPageTitleTest()[pri:1, instance:com.qa.opencart.Tests.LoginpageTest@778db7c5]" started-at="2025-07-25T22:54:39 IST" name="loginPageTitleTest" finished-at="2025-07-25T22:54:39 IST" duration-ms="123" status="PASS">
+        <test-method signature="loginPageTitleTest()[pri:1, instance:com.qa.opencart.Tests.LoginpageTest@7a8136b3]" started-at="2025-07-28T13:53:59 IST" name="loginPageTitleTest" finished-at="2025-07-28T13:54:00 IST" duration-ms="99" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginPageTitleTest -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestContext)[pri:0, instance:com.qa.opencart.Tests.LoginpageTest@778db7c5]" started-at="2025-07-25T22:54:39 IST" name="afterMethod" finished-at="2025-07-25T22:54:39 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestContext)[pri:0, instance:com.qa.opencart.Tests.LoginpageTest@7a8136b3]" started-at="2025-07-28T13:54:00 IST" name="afterMethod" finished-at="2025-07-28T13:54:00 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@2b2ed6af]]>
+                <![CDATA[org.testng.TestRunner@90ad962]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:com.qa.opencart.Tests.LoginpageTest@778db7c5]" started-at="2025-07-25T22:54:39 IST" name="beforeMethod" finished-at="2025-07-25T22:54:39 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:com.qa.opencart.Tests.LoginpageTest@7a8136b3]" started-at="2025-07-28T13:54:00 IST" name="beforeMethod" finished-at="2025-07-28T13:54:00 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@2b2ed6af]]>
+                <![CDATA[org.testng.TestRunner@90ad962]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="loginPageURLTest()[pri:2, instance:com.qa.opencart.Tests.LoginpageTest@778db7c5]" started-at="2025-07-25T22:54:39 IST" name="loginPageURLTest" finished-at="2025-07-25T22:54:39 IST" duration-ms="29" status="PASS">
+        <test-method signature="loginPageURLTest()[pri:2, instance:com.qa.opencart.Tests.LoginpageTest@7a8136b3]" started-at="2025-07-28T13:54:00 IST" name="loginPageURLTest" finished-at="2025-07-28T13:54:00 IST" duration-ms="33" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginPageURLTest -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestContext)[pri:0, instance:com.qa.opencart.Tests.LoginpageTest@778db7c5]" started-at="2025-07-25T22:54:39 IST" name="afterMethod" finished-at="2025-07-25T22:54:39 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestContext)[pri:0, instance:com.qa.opencart.Tests.LoginpageTest@7a8136b3]" started-at="2025-07-28T13:54:00 IST" name="afterMethod" finished-at="2025-07-28T13:54:00 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@2b2ed6af]]>
+                <![CDATA[org.testng.TestRunner@90ad962]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:com.qa.opencart.Tests.LoginpageTest@778db7c5]" started-at="2025-07-25T22:54:39 IST" name="beforeMethod" finished-at="2025-07-25T22:54:39 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:com.qa.opencart.Tests.LoginpageTest@7a8136b3]" started-at="2025-07-28T13:54:00 IST" name="beforeMethod" finished-at="2025-07-28T13:54:00 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@2b2ed6af]]>
+                <![CDATA[org.testng.TestRunner@90ad962]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="forgotPwdLinkExistTest()[pri:3, instance:com.qa.opencart.Tests.LoginpageTest@778db7c5]" started-at="2025-07-25T22:54:39 IST" name="forgotPwdLinkExistTest" finished-at="2025-07-25T22:54:39 IST" duration-ms="85" status="PASS">
+        <test-method signature="forgotPwdLinkExistTest()[pri:3, instance:com.qa.opencart.Tests.LoginpageTest@7a8136b3]" started-at="2025-07-28T13:54:00 IST" name="forgotPwdLinkExistTest" finished-at="2025-07-28T13:54:00 IST" duration-ms="117" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- forgotPwdLinkExistTest -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestContext)[pri:0, instance:com.qa.opencart.Tests.LoginpageTest@778db7c5]" started-at="2025-07-25T22:54:39 IST" name="afterMethod" finished-at="2025-07-25T22:54:39 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestContext)[pri:0, instance:com.qa.opencart.Tests.LoginpageTest@7a8136b3]" started-at="2025-07-28T13:54:00 IST" name="afterMethod" finished-at="2025-07-28T13:54:00 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@2b2ed6af]]>
+                <![CDATA[org.testng.TestRunner@90ad962]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:com.qa.opencart.Tests.LoginpageTest@778db7c5]" started-at="2025-07-25T22:54:39 IST" name="beforeMethod" finished-at="2025-07-25T22:54:39 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:com.qa.opencart.Tests.LoginpageTest@7a8136b3]" started-at="2025-07-28T13:54:00 IST" name="beforeMethod" finished-at="2025-07-28T13:54:00 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@2b2ed6af]]>
+                <![CDATA[org.testng.TestRunner@90ad962]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="doLoginTest()[pri:4, instance:com.qa.opencart.Tests.LoginpageTest@778db7c5]" started-at="2025-07-25T22:54:39 IST" name="doLoginTest" finished-at="2025-07-25T22:54:42 IST" duration-ms="2425" status="PASS">
+        <test-method signature="doLoginTest()[pri:4, instance:com.qa.opencart.Tests.LoginpageTest@7a8136b3]" started-at="2025-07-28T13:54:00 IST" name="doLoginTest" finished-at="2025-07-28T13:54:01 IST" duration-ms="1038" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doLoginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.opencart.Tests.LoginpageTest@778db7c5]" started-at="2025-07-25T22:54:42 IST" name="tearDown" finished-at="2025-07-25T22:54:42 IST" duration-ms="408" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestContext)[pri:0, instance:com.qa.opencart.Tests.LoginpageTest@778db7c5]" started-at="2025-07-25T22:54:42 IST" name="afterMethod" finished-at="2025-07-25T22:54:42 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestContext)[pri:0, instance:com.qa.opencart.Tests.LoginpageTest@7a8136b3]" started-at="2025-07-28T13:54:01 IST" name="afterMethod" finished-at="2025-07-28T13:54:01 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@2b2ed6af]]>
+                <![CDATA[org.testng.TestRunner@90ad962]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.opencart.Tests.LoginpageTest@7a8136b3]" started-at="2025-07-28T13:54:01 IST" name="tearDown" finished-at="2025-07-28T13:54:01 IST" duration-ms="481" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- com.qa.opencart.Tests.LoginpageTest -->
     </test> <!-- LoginpageTest -->
   </suite> <!-- TestNG Regression Suite -->
